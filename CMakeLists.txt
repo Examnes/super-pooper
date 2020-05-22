@@ -17,6 +17,7 @@ add_executable(lab6.1 6.1/main.cpp)
 add_executable(lab6.2 6.2/main.cpp)
 add_executable(lab6.3 6.3/main.cpp)
 add_executable(lab6.4 6.4/main.cpp)
+add_executable(lab7 7/main.cpp)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
