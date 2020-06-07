@@ -7,7 +7,7 @@
 #include <algorithm>
 #include <sstream>
 #include <string>
-#include <scanner.hh>
+#include "scanner.hh"
 #include <cstring>
 using namespace std;
 

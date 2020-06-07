@@ -18,6 +18,13 @@ add_executable(lab6.2 6.2/main.cpp)
 add_executable(lab6.3 6.3/main.cpp)
 add_executable(lab6.4 6.4/main.cpp)
 add_executable(lab7 7/main.cpp)
+add_executable(lab8 8/main.cpp)
+add_executable(lab9 9/main.cpp)
+add_executable(lab10 10/main.cpp)
+add_executable(lab11 11/main.cpp 11/scanner.cpp)
+add_executable(lab12 12/main_str.cpp)
+
+target_include_directories(lab11 PUBLIC ${PROJECT_SOURCE_DIR}/11)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
