@@ -197,8 +197,8 @@ bool compare_files(const std::string& p1, const std::string& p2) {
       return false;
     }
 
-    f1.seekg(0, std::ifstream::beg);
-    f2.seekg(0, std::ifstream::beg);
+    f1.seekg(0);
+    f2.seekg(0);
 
     while (f1.peek() != EOF)
     {
@@ -206,7 +206,8 @@ bool compare_files(const std::string& p1, const std::string& p2) {
         f1.read((char*)&number,sizeof(float));
         float number2;
         f2.read((char*)&number2,sizeof(float));
-        if(number != number2) return false;
+        if((number - number2) > 0.01f) 
+            return false;
     }
     f1.close();
     f2.close();

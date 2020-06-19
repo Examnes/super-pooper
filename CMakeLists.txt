@@ -23,6 +23,10 @@ add_executable(lab9 9/main.cpp)
 add_executable(lab10 10/main.cpp)
 add_executable(lab11 11/main.cpp 11/scanner.cpp)
 add_executable(lab12 12/main_str.cpp)
+add_executable(lab13 13/main.cpp)
+add_executable(lab14 14/main.cpp)
+add_executable(lab15 15/main.cpp)
+add_executable(lab16 16/main.cpp)
 
 target_include_directories(lab11 PUBLIC ${PROJECT_SOURCE_DIR}/11)
 
