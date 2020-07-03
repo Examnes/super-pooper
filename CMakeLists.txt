@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(lab VERSION 0.1.0)
 
+set(CMAKE_CXX_STANDARD )
+
 add_executable(lab1 1/main.cpp)
 add_executable(lab1.1 1.1/main.cpp)
 add_executable(lab2 2/main.cpp)
@@ -27,6 +29,19 @@ add_executable(lab13 13/main.cpp)
 add_executable(lab14 14/main.cpp)
 add_executable(lab15 15/main.cpp)
 add_executable(lab16 16/main.cpp)
+add_executable(c_str8 str/c_main.cpp)
+target_compile_features(c_str8 PRIVATE cxx_std_17)
+add_executable(str8 str/main.cpp)
+target_compile_features(str8 PRIVATE cxx_std_17)
+add_executable(w_str8 str/w_main.cpp)
+target_compile_features(w_str8 PRIVATE cxx_std_17)
+
+add_executable(lab17 17/main.cpp)
+add_executable(lab17.1 17.1/main.cpp)
+
+add_executable(lab18 18/main.cpp)
+
+add_executable(lab18.1 18.1/main.cpp)
 
 target_include_directories(lab11 PUBLIC ${PROJECT_SOURCE_DIR}/11)
 
